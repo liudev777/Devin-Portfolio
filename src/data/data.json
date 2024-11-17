@@ -1,0 +1,22 @@
+{
+    "name": "Devin Liu",
+    "about": "I'm a full stack developer based in Chicago attending the Illinois Institute of Technology, pursuing a Bachelor's and Master's Co-term degree in Computer Science! I am passionate about building robust applications using frontend technology such as React, as well as backend technologies like Python, Node.js, and MySQL.",
+
+    "projects": [
+      {
+        "title": "Project 1",
+        "description": "p1p1p1p1pp1p1pp1",
+        "img_url": null
+      },
+      {
+        "title": "Project 2",
+        "description": "p2p2pp2p2p2p2",
+        "img_url": null 
+      },
+      {
+        "title": "Project 3",
+        "description": "p3p3p3p3p3p3p3",
+        "img_url": null
+      }
+    ]
+}
