@@ -1,10 +1,8 @@
 import { useState } from "react";
-import logo from "../../assets/logo.png" 
 import { motion } from "framer-motion";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 const Nav = () => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -32,12 +30,12 @@ const Nav = () => {
 
 
   return (
-    <nav className="flex items-center justify-between w-full py-12 px-[]">
-      <div className="">
-        <a href="/" className="text-2xl">{"Devin Liu"}</a>
+    <nav className="flex items-center justify-between w-full py-8 px-16">
+      <div className="z-50">
+        <a href="/" className="text-2xl">DL</a>
       </div>
 
-      <ul className="hidden md:flex gap-12 mr-4">
+      <ul className="hidden md:flex gap-12 mr-4 z-50">
         <li><a href="/" className="link-hover">Home</a></li>
         <li><a href="/resume" className="link-hover">Resume</a></li>
         <li><a href="/art" className="link-hover">Art</a></li>
@@ -54,7 +52,7 @@ const Nav = () => {
       variants={menuVariants}
       className="fixed left-0 top-0 w-full min-h-screen bg-neutral-900 z-40"
       >         
-        <ul className="font-thin text-4xl space-y-8 mt-24 text-center">
+        <ul className="font-thin text-xl space-y-8 mt-24 text-center">
           <li><a href="/" className="link-hover">Home</a></li>
           <li><a href="/resume" className="link-hover">Resume</a></li>
           <li><a href="/art" className="link-hover">Art</a></li>

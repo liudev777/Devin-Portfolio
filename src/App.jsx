@@ -1,6 +1,6 @@
-import Home from "./pages/home/Home";
-import Nav from "./components/nav/Nav";
-import Resume from "./pages/resume/Resume";
+import Home from "./pages/Home";
+import Nav from "./components/Nav";
+import Resume from "./pages/Resume";
 // import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -8,10 +8,8 @@ function App() {
   return (
     <Router>
       {/* Background */}
-      <div className="bg">
-      </div>
+      <div className="bg"/>
 
-      {/* Main Container with Margin */}
       <div>
         <Nav />
         <Routes>
