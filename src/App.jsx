@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 function App() {
-  const ROUTE_ENDPOINT = import.meta.env.VITE_ROUTE_ENDPOINT || "/Devin_Portfolio/"
+  const ROUTE_ENDPOINT = import.meta.env.VITE_ROUTE_ENDPOINT || "/Devin-Portfolio/"
   return (
     <Router>
       {/* Background */}
