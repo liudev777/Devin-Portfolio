@@ -11,7 +11,7 @@ import {
 import resume from "../assets/Devin_Liu_Resume_2025.pdf"
 import data from "../data/data.json"
 
-const ROUTE_ENDPOINT = import.meta.env.VITE_ROUTE_ENDPOINT || "/Devin-Portfolio/"
+const ROUTE_ENDPOINT = "/"
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
