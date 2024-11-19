@@ -6,20 +6,24 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   font-family: "Space Grotesk", sans-serif;
   color: #f5f5f5;
+  @apply selection:bg-[rgba(155,128,197,255)] selection:text-white;
 }
 
 .link-hover {
-  @apply inline-block hover:text-purple-300 transition-all duration-150;
+  @apply inline-block hover:text-purple-300 transition-all duration-300;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+.glow {
+  @apply absolute z-[-1] h-full w-full bg-[radial-gradient(circle_500px_at_50%_200px,rgba(120,119,198,0.3),transparent)]
+}
+
 .bg {
-  /* @apply fixed top-0 right-0 z-[-2] min-h-screen w-full bg-neutral-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] */
-  @apply fixed inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(120,119,198,0.3),transparent)] bg-neutral-900
+  @apply fixed h-full w-full bg-neutral-900 z-[-2]
 }

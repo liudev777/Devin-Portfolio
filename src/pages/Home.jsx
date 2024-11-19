@@ -1,10 +1,38 @@
 import Hero from "../components/Hero";
+import Projects from "../components/Projects";
 
 const Home = () => {
 
   return (
-    <div>  
+    <div className="flex flex-col justify-between items-center min-w-[320px] md:mx-32 mx-20">  
       <Hero />
+      <Projects />
+      <div className="my-16">
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+        hi <br />
+      </div>
     </div>
   )
 };
