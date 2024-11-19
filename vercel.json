@@ -3,7 +3,10 @@
 {
     "rewrites": [
         {"source": "/(.*)", "destination": "/"}
-    ]
+    ],
+    "git": {
+        "dev-env": false
+    }
 }
 
 
