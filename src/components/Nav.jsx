@@ -106,8 +106,8 @@ const Nav = () => {
         >         
           <ul className="font-thin text-xl space-y-8 mt-24 text-center">
             <li><a href={ROUTE_ENDPOINT} className="link-hover">Home</a></li>
-            <li><a href={ROUTE_ENDPOINT +"/art"} className="link-hover">Art</a></li>
-            <li><a href={ROUTE_ENDPOINT +"/photography"} className="link-hover">Photography</a></li>
+            <li><a href={ROUTE_ENDPOINT +"art"} className="link-hover">Art</a></li>
+            <li><a href={ROUTE_ENDPOINT +"photography"} className="link-hover">Photography</a></li>
           </ul>
           <div className="flex flex-col items-center mt-12 space-y-8">
             <div className="flex space-x-6">
