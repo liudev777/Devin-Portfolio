@@ -51,5 +51,31 @@
     "github": "https://www.github.com/liudev777",
     "linkedin": "https://www.linkedin.com/in/liudev777",
     "instagram": "https://www.instagram.com/d.liuliuliu"
-  }
+  },
+  "experiences": [
+    {
+      "company": "xyz",
+      "title": "abc",
+      "year": 1234,
+      "description": "Did xyz."
+    },
+    {
+      "company": "xyz",
+      "title": "abc",
+      "year": 1234,
+      "description": "Did xyz."
+    },
+    {
+      "company": "xyz",
+      "title": "abc",
+      "year": 1234,
+      "description": "Did xyz."
+    },
+    {
+      "company": "xyz",
+      "title": "abc",
+      "year": 1234,
+      "description": "Did xyz."
+    }
+  ]
 }
