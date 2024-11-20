@@ -62,14 +62,14 @@ const Nav = () => {
         : "bg-transparent"
     }`}>
 
-      <div className="max-w-[1650px] mx-auto flex items-center justify-between py-6 px-16">
+      <div className="max-w-[1650px] mx-auto flex items-center justify-between py-6 md:px-16 px-8">
         <ul className="hidden md:flex gap-6 z-50">
           <li><FaInstagram size={30} className="cursor-pointer hover:text-purple-300  transition-all duration-300" onClick={() => window.open(data.urls.instagram, "_blank")}/></li>
           <li><FaLinkedin size={30} className="cursor-pointer hover:text-purple-300  transition-all duration-300" onClick={() => window.open(data.urls.linkedin, "_blank")}/></li>
           <li><FaGithub size={30} className="cursor-pointer hover:text-purple-300  transition-all duration-300" onClick={() => window.open(data.urls.github, "_blank")}/></li>
           <li>
           <a
-            className="flex items-center space-x-2 px-3 py-1 rounded-lg border cursor-pointer hover:bg-purple-300 duration-300"
+            className="flex items-center space-x-2 px-3 py-1 rounded-lg border cursor-pointer hover:bg-purple-300 hover:text-neutral-900 hover:border-purple-300 duration-300"
             href={resume}
 
             target="_blank"
@@ -106,8 +106,8 @@ const Nav = () => {
         >         
           <ul className="font-thin text-xl space-y-8 mt-24 text-center">
             <li><a href={ROUTE_ENDPOINT} className="link-hover">Home</a></li>
-            <li><a href={ROUTE_ENDPOINT +"/art"} className="link-hover">Art</a></li>
-            <li><a href={ROUTE_ENDPOINT +"/photography"} className="link-hover">Photography</a></li>
+            <li><a href={ROUTE_ENDPOINT +"art"} className="link-hover">Art</a></li>
+            <li><a href={ROUTE_ENDPOINT +"photography"} className="link-hover">Photography</a></li>
           </ul>
           <div className="flex flex-col items-center mt-12 space-y-8">
             <div className="flex space-x-6">

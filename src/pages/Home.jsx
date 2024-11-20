@@ -4,7 +4,7 @@ import Projects from "../components/Projects";
 const Home = () => {
 
   return (
-    <div className="flex flex-col justify-between items-center min-w-[320px] md:mx-32 mx-20">  
+    <div className="flex flex-col justify-between items-center md:mx-32 mx-20">  
       <Hero />
       <Projects />
       <div className="my-16">
