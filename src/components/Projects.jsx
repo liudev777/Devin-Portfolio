@@ -60,32 +60,34 @@ const Projects = () => {
           whileInView={{ x: "0%" }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-thin text-gray-200 mb-8"
+          className="flex flex-col text-3xl md:text-4xl font-thin text-gray-200 mb-16 items-center"
         >
           Projects
           <p className="text-sm opacity-50">(Hosting gets expensive...)</p>
         </motion.h2>
 
         {/* Project List */}
-        {data.projects.map((project, index) => (
-          <motion.div
-            key={project.id}
-            initial={index % 2 === 1 ? { x: "2%" } : { x: "-2%" }}
-            whileInView={{ x: "0%" }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-            className="py-8"
-          >
-            <ProjectCard
-              img={project.img_url}
-              title={project.title}
-              alt={project.alt}
-              description={project.description}
-              github_url={project.github_url}
-              index={index}
-            />
-          </motion.div>
-        ))}
+        <div className="flex flex-col space-y-12">
+          {data.projects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={index % 2 === 1 ? { x: "2%" } : { x: "-2%" }}
+              whileInView={{ x: "0%" }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className=""
+            >
+              <ProjectCard
+                img={project.img_url}
+                title={project.title}
+                alt={project.alt}
+                description={project.description}
+                github_url={project.github_url}
+                index={index}
+              />
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
     </div>
   );

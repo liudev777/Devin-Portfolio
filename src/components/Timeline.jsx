@@ -78,7 +78,7 @@ const Experience = ({ company, title, from, to, description, index }) => {
                 transition={{ duration: 0.8, ease: 'easeOut'}}
                 viewport={{ once: true }}
                 >
-                    <div>{from}</div> 
+                    <div>{to ? `${from} - ${to}` : from}</div>
                     <div>{title}</div>
                 </motion.div>)
                 :
@@ -115,8 +115,7 @@ const Experience = ({ company, title, from, to, description, index }) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: 'easeOut'}}
                 >
-                    <div>{from}</div> 
-                    <div>{title}</div>
+                    <div>{to ? `${from} - ${to}` : from}</div>
                 </motion.div>)
                 :
                 (<motion.div
@@ -138,10 +137,10 @@ function Timeline() {
   return (
     <div>
       <div className="hidden lg:inline">
-        <div className="text-3xl md:text-4xl font-thin flex justify-start">
+        <div className="text-3xl md:text-4xl font-thin flex justify-center mb-16">
           Experience
         </div>
-        <div className="mt-24">
+        <div className="">
           {data.experiences.map((experience, index) => (
             <div className="flex flex-col items-center">
             <Experience
