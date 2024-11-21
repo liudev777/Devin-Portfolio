@@ -8,7 +8,7 @@ import profileImage from '../assets/profileImage.png';
 
 const SlidingBlocks = () => {
     return (
-      <div className="relative flex items-center justify-center w-[300px] md:w-[400px] md:mx-16 h-auto mx-auto">
+      <div className="relative flex items-center justify-center w-[300px] md:w-[400px] h-auto mx-auto">
         {/* Background Block */}
         <motion.img
           src={bgBlock}

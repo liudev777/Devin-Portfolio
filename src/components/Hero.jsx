@@ -8,8 +8,8 @@ const Hero = () => {
 
   return (
     <>
-      <div className="grid md:grid-cols-1 mb-">  
-        <div className="flex flex-col md:flex-row items-center justify-between pt-24 md:pt-48 max-w-[1500px] relative md:space-x-32 space-y-8 md:space-y-0">
+      <div className="grid mb-">  
+        <div className="flex flex-col md:flex-row items-center justify-between pt-24 md:pt-48 relative space-y-8 md:space-y-0 md:space-x-10">
           <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -25,7 +25,8 @@ const Hero = () => {
             className="text-3xl md:text-5xl md:mb-4 font-extralight"
             >
               HEY, I AM <br />
-              <span className="whitespace-nowrap text-6xl md:text-8xl md:mb-3 block">
+              <div className="inline-block">
+              <span className="whitespace-nowrap text-6xl md:text-8xl block">
                 <motion.div
                 className="inline-block"
                 initial={{ scale: 2}}
@@ -42,8 +43,11 @@ const Hero = () => {
                   <span className="inline-block bg-gradient-to-r from-[rgba(255,205,29,100)] to-[rgba(255,131,247,100)] bg-clip-text tracking-tight text-transparent font-bold">DEV</span>
                 </motion.div>
                 </motion.div>
-                IN LIU
-              </span> <br />
+                IN&nbsp;
+              </span>
+              </div>
+              <span className="inline-block text-6xl md:text-8xl md:mb-3">LIU</span> 
+              <br />
               I am a: <br />
             </motion.p>
             

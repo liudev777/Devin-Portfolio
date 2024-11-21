@@ -18,12 +18,23 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+  max-height: 100%;
+  overscroll-behavior: none;
+
+  background-image: url('./assets/coral.jpg');
+  background-color: rgba(0, 0, 0, 0.8); /* Adds a dark color */
+  background-blend-mode: multiply; /* Darkens the image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps it in place during scrolling */
 }
 
 .glow {
-  @apply absolute z-[-1] h-full w-full bg-[radial-gradient(circle_500px_at_50%_200px,rgba(120,119,198,0.3),transparent)]
+  @apply absolute z-[-1] h-[100vh] w-full bg-[radial-gradient(circle_500px_at_50%_200px,rgba(120,119,198,0.3),transparent)]
 }
 
 .bg {
-  @apply fixed h-full w-full bg-neutral-900 z-[-2]
+  @apply fixed top-0 w-full min-h-full bg-cover bg-no-repeat bg-neutral-900 bg-blend-normal z-[-2];
 }

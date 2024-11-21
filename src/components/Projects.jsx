@@ -48,7 +48,7 @@ const ProjectCard = ({ img, title, alt, description, github_url, index }) => {
 
 const Projects = () => {
   return (
-    <div className="max-w-[1000px] mx-auto p-6 md:my-20">
+    <div className="md:max-w-[1000px] mx-auto md:my-20">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -70,7 +70,7 @@ const Projects = () => {
         {data.projects.map((project, index) => (
           <motion.div
             key={project.id}
-            initial={index % 2 === 1 ? { x: "20%" } : { x: "-20%" }}
+            initial={index % 2 === 1 ? { x: "2%" } : { x: "-2%" }}
             whileInView={{ x: "0%" }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
