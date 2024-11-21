@@ -54,28 +54,39 @@
   },
   "experiences": [
     {
-      "company": "xyz",
-      "title": "abc",
-      "year": 1234,
-      "description": "Did xyz."
+      "company": "State Farm",
+      "title": "Software Engineer Intern",
+      "from": "05/2024",
+      "to": "08/2024",
+      "description": "Worked in the Property & Casualty Actuarial Underwriting Modeling department (PCM) with team Acadia on the company's internal Query Management System: an abstracted drag and drop web app approach to traditional database querying, using React and Python."
     },
     {
-      "company": "xyz",
-      "title": "abc",
-      "year": 1234,
-      "description": "Did xyz."
+      "company": "INFI",
+      "title": "Software Developer Intern",
+      "from": "12/2023",
+      "to": null,
+      "description": "Lead the development of an automation tool to map Kiosks with crash logs to their respective merchant for troubleshooting using Python, Google Cloud, BigQuery API, and Alibaba SLS."
     },
     {
-      "company": "xyz",
-      "title": "abc",
-      "year": 1234,
-      "description": "Did xyz."
+      "company": "INFI",
+      "title": "Software QA Intern",
+      "from": "05/2023",
+      "to": "08/2023",
+      "description": "Created manual integration and acceptance tests for Android, IOS, and web apps, documenting over 100 bugs per sprint."
     },
     {
-      "company": "xyz",
-      "title": "abc",
-      "year": 1234,
-      "description": "Did xyz."
+      "company": "INFI",
+      "title": "Operations Member",
+      "from": "05/2022",
+      "to": "08/2022",
+      "description": "Designed wiring configurations to compactly install Square Payment devices onto company Kiosks. Performed onsite installation, shipping, and customer service."
+    },
+    {
+      "company": "8A5E",
+      "title": "Intern",
+      "from": "07/2021",
+      "to": "08/2021",
+      "description": "Fixed computers, resold business equipments, and made coffee all in one"
     }
   ]
 }
