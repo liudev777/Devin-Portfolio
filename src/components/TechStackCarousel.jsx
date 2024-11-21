@@ -26,7 +26,7 @@ function TechStackCarousel() {
 
     return (
         
-        <div className="relative w-1/2 overflow-hidden py-8 my-12">
+        <div className="relative w-1/2 overflow-hidden">
         {/* Gradient Overlay for Fade Effect */}
             <div className="absolute inset-0 z-10 pointer-events-none">
                 <div className="absolute left-0 top-0 w-1/6 h-full bg-gradient-to-r from-neutral-900 to-transparent"></div>
