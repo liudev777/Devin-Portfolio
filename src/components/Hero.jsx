@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <>
       <div className="grid mb-">  
-        <div className="flex flex-col md:flex-row items-center justify-between pt-24 md:pt-48 relative space-y-8 md:space-y-0 md:space-x-10">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-24 md:pt-32 relative gap-y-8 md:gap-y-0 md:gap-x-10 max-w-[1000px]">
           <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ const Hero = () => {
                 viewport={{ once: true}}
                 whileHover={{ scale: 1.1, transition: { duration: 0.1 }}}
                 >
-                  <span className="inline-block bg-gradient-to-r from-[rgba(255,205,29,100)] to-[rgba(255,131,247,100)] bg-clip-text tracking-tight text-transparent font-bold">DEV</span>
+                  <span className="inline-block bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold">DEV</span>
                 </motion.div>
                 </motion.div>
                 IN&nbsp;

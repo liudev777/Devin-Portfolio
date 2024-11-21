@@ -32,7 +32,7 @@ const Experience = ({ company, title, from, to, description, index }) => {
   const variantsLeft = {
     hidden: { 
       opacity: 0, 
-      rotate: -90, // Rotate from 90 or -90 degrees depending on the side
+      rotate: reverse ? 90 : -90, // Rotate from 90 or -90 degrees depending on the side
       originX: 1.1, // Set the rotation origin to the center icon
       originY: 0.5, // Align vertically with the center
     },
@@ -44,7 +44,7 @@ const Experience = ({ company, title, from, to, description, index }) => {
   const variantsRight = {
     hidden: { 
       opacity: 0, 
-      rotate: -90, // Rotate from 90 or -90 degrees depending on the side
+      rotate: reverse ? 90 : -90, // Rotate from 90 or -90 degrees depending on the side
       originX: -0.1, // Set the rotation origin to the center icon
       originY: 0.5, // Align vertically with the center
     },
@@ -135,9 +135,9 @@ const Experience = ({ company, title, from, to, description, index }) => {
 
 function Timeline() {
   return (
-    <div>
-      <div className="hidden lg:inline">
-        <div className="text-3xl md:text-4xl font-thin flex justify-center mb-16">
+    <div className="relative z-10 w-full h-auto bg-transparent p-4">
+      <div className="hidden lg:inline ">
+        <div className="text-3xl md:text-4xl font-thin flex justify-center mb-16 ">
           Experience
         </div>
         <div className="">
