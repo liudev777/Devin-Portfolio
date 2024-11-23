@@ -38,3 +38,7 @@ html {
 .bg {
   @apply fixed top-0 w-full h-full bg-cover bg-no-repeat bg-neutral-900 bg-blend-normal z-[-2];
 }
+
+.lock-scroll {
+  overflow: hidden;
+}

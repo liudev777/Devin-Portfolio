@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="grid mb-">  
+      <div className="grid">  
         <div className="flex flex-col md:flex-row items-center justify-between pt-24 md:pt-32 relative gap-y-8 md:gap-y-0 md:gap-x-10 max-w-[1000px]">
           <motion.div
           initial={{ opacity: 0, y: -50 }}

@@ -54,12 +54,24 @@ const Nav = () => {
     }
   })
 
+  useEffect(() => {
+    const html = document.getElementsByTagName('html')[0]
+  
+    if (isOpen) {
+      html.classList.add('lock-scroll')
+    } else {
+      html.classList.remove('lock-scroll')
+    }
+    return () => {
+      html.classList.remove('lock-scroll')
+    }
+  }, [isOpen])
+
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all ${
-      isScrolled
-        ? "backdrop-blur-lg"
-        : "bg-transparent"
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
+      isScrolled && !isOpen
+        ? "backdrop-blur-lg bg-neutral-700 bg-opacity-30": "bg-transparent"
     }`}>
 
       <div className="max-w-[1650px] mx-auto flex items-center justify-between py-6 md:px-16 px-8">
@@ -102,7 +114,7 @@ const Nav = () => {
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
         variants={menuVariants}
-        className="fixed left-0 top-0 w-full min-h-screen backdrop-blur-lg z-40 md:invisible"
+        className="fixed left-0 top-0 w-full h-full backdrop-blur-lg bg-neurtal-700 bg-opacity-30 z-40 md:invisible "
         >         
           <ul className="font-thin text-xl space-y-8 mt-24 text-center">
             <li><a href={ROUTE_ENDPOINT} className="link-hover">Home</a></li>
