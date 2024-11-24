@@ -21,9 +21,9 @@ const ProjectCard = ({ img, title, alt, description, github_url, index }) => {
 
       {/* Text Section */}
       <div className="w-full md:w-1/2 flex flex-col justify-start md:justify-center">
-        <h3 className="text-2xl font-thin text-purple-300">{title}</h3>
+        <h3 className="text-2xl text-purple-300">{title}</h3>
         <h3 className="text-gray-300 font-extralight italic mb-4">{alt}</h3>
-        <p className="text-gray-300 font-extralight mb-4">{description}</p>
+        <p className="text-gray-300 font-light mb-4">{description}</p>
         <div className="flex space-x-4">
           {github_url && (
             <motion.div
@@ -48,7 +48,7 @@ const ProjectCard = ({ img, title, alt, description, github_url, index }) => {
 
 const Projects = () => {
   return (
-    <div className="md:max-w-[1000px] mx-auto md:my-20">
+    <div className="poppins md:max-w-[1000px] mx-auto md:my-20">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -60,7 +60,7 @@ const Projects = () => {
           whileInView={{ x: "0%" }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="flex flex-col text-3xl md:text-4xl font-thin text-gray-200 mb-16 items-center"
+          className="flex flex-col text-3xl md:text-4xl text-gray-200 mb-16 items-center"
         >
           Projects
           <p className="text-sm opacity-50">(Hosting gets expensive...)</p>

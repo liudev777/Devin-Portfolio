@@ -20,7 +20,7 @@ const PlusIcon = () => {
 
 const DescriptionBlock = ({ company, description }) => {
   return (
-    <div className="bg-neutral-600 rounded-md p-4 max-w-sm">
+    <div className="bg-neutral-600 rounded-md p-4 max-w-md">
       <span className="font-bold">{company}</span>
       <p className="text-sm text-gray-300 mt-2">{description}</p>
     </div>
@@ -116,6 +116,7 @@ const Experience = ({ company, title, from, to, description, index }) => {
                 transition={{ duration: 0.8, ease: 'easeOut'}}
                 >
                     <div>{to ? `${from} - ${to}` : from}</div>
+                    <div>{title}</div>
                 </motion.div>)
                 :
                 (<motion.div
