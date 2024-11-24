@@ -5,7 +5,17 @@ import data from '../data/data.json'
 
 function About() {
   return (
-    <div className=''>
+    <div className='flex flex-col items-center'>
+      <motion.h2
+          initial={{ x: "-100%" }}
+          whileInView={{ x: "0%" }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="flex flex-col text-3xl md:text-4xl text-gray-200 mb-16 items-center"
+        >
+          About Me
+          <p className="text-sm opacity-50">(Who am I?)</p>
+        </motion.h2>
         <motion.div className='flex flex-row items-center gap-x-16 max-w-[1000px]'>        
             <motion.img
             src={me}

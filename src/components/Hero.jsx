@@ -24,27 +24,29 @@ const Hero = () => {
             className="text-3xl md:text-6xl md:mb-4 font-extralight"
             >
               Hey! I'm<br />
-              <div className="inline-block">
-              <span className="whitespace-nowrap text-6xl md:text-9xl">
-                <motion.div
-                className="inline-block md:py-5"
-                initial={{ scale: 2}}
-                viewport={{ once: true }}
-                whileInView={{ scale: 1 }}
-                transition={{ duration: 0.9 }}
-                >
-                <motion.div
-                className="inline-block"
-                whileInView={{ scale: 1, transition: { duration: 0.1 } }}
-                viewport={{ once: true}}
-                whileHover={{ scale: 1.1, transition: { duration: 0.1 }}}
-                >
-                  <span className="bg-gradient-to-t from-pink-300 to-purple-500 bg-clip-text text-transparent font-bold ">DEV</span>
-                </motion.div>
-                </motion.div>
-                <span className="inline bg-gradient-to-t from-teal-400 to-blue-500 bg-clip-text text-transparent font-bold ">IN&nbsp;</span>
-              </span>
-              <span className="block md:inline text-6xl md:text-9xl bg-gradient-to-t from-teal-400 to-blue-500 bg-clip-text text-transparent font-bold" >LIU</span> 
+              <div className="inline-block bg-gradient-to-t from-pink-300 to-purple-500 bg-clip-text text-transparent font-bold ">
+              <div>
+                <span className="whitespace-nowrap text-6xl md:text-9xl">
+                  <motion.div
+                  className="inline-block md:py-5"
+                  initial={{ scale: 2}}
+                  viewport={{ once: true }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ duration: 0.9 }}
+                  >
+                  <motion.div
+                  className="inline-block"
+                  whileInView={{ scale: 1, transition: { duration: 0.1 } }}
+                  viewport={{ once: true}}
+                  whileHover={{ scale: 1.1, transition: { duration: 0.1 }}}
+                  >
+                    <span className="">DEV</span>
+                  </motion.div>
+                  </motion.div>
+                  <span className="inline bg-gradient-to-t from-pink-300 to-purple-500 bg-clip-text text-transparent font-bold  ">IN&nbsp;</span>
+                </span>
+                <span className="block md:inline text-6xl md:text-9xl " >LIU</span> 
+              </div>
               </div>
               <br />
               I am a: <br />
@@ -69,15 +71,6 @@ const Hero = () => {
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-6xl tracking-tight text-transparent"
             />
 
-            {/* <motion.p
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1}}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1 }}
-            className="poppins md:text-xl font-extralight"
-            >
-              {data.about}
-            </motion.p> */}
           </motion.div>
           
           {/* <motion.img
@@ -93,7 +86,6 @@ const Hero = () => {
           </div> */}
         </div>
       </div>
-      {/* <TechStackCarousel/> */}
     </>
   )
 };

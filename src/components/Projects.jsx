@@ -48,7 +48,7 @@ const ProjectCard = ({ img, title, alt, description, github_url, index }) => {
 
 const Projects = () => {
   return (
-    <div className="poppins md:max-w-[1000px] mx-auto md:my-20">
+    <div className="md:max-w-[1000px] mx-auto md:my-20">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -67,7 +67,7 @@ const Projects = () => {
         </motion.h2>
 
         {/* Project List */}
-        <div className="flex flex-col space-y-12">
+        <div className="poppins flex flex-col space-y-12">
           {data.projects.map((project, index) => (
             <motion.div
               key={project.id}

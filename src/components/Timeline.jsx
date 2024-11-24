@@ -22,7 +22,7 @@ const DescriptionBlock = ({ company, description }) => {
   return (
     <div className="bg-neutral-600 rounded-md p-4 max-w-md">
       <span className="font-bold">{company}</span>
-      <p className="text-sm text-gray-300 mt-2">{description}</p>
+      <p className="poppins text-sm text-gray-300 mt-2">{description}</p>
     </div>
   );
 };
@@ -242,9 +242,16 @@ const ExperienceFull = ({ company, title, from, to, description, index }) => {
 function Timeline() {
   return (
     <div className="relative z-10 w-full h-auto bg-transparent p-4">
-      <div className="text-3xl md:text-4xl font-thin flex justify-center mb-16 ">
-        Experience
-      </div>
+        <motion.h2
+          initial={{ x: "-100%" }}
+          whileInView={{ x: "0%" }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="flex flex-col text-3xl md:text-4xl text-gray-200 mb-16 items-center"
+        >
+          Experience
+          <p className="text-sm opacity-50">(The epic journey of Devin Liu...)</p>
+        </motion.h2>
       <div className="hidden lg:inline ">
         <div className="">
           {data.experiences.map((experience, index) => (
