@@ -3,7 +3,7 @@
   "git": {
     "deploymentEnabled": {
       "dev-env": false,
-      "v2": false
+      "v2": true
     }
   }
 }
