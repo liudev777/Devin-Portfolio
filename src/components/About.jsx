@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import me from '../assets/me_head.png'
+import me from '../assets/me.png'
 import data from '../data/data.json'
 
 function About() {

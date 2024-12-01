@@ -88,5 +88,88 @@
       "to": "08/2021",
       "description": "Fixed computers, resold business equipments, and made coffee all in one"
     }
+  ],
+  "tools": [
+    {
+      "name": "React",
+      "img_path": "src/assets/logo_svg/react.svg"
+    },
+    {
+      "name": "AWS",
+      "img_path": "src/assets/logo_svg/aws.svg"
+    },
+    {
+      "name": "C",
+      "img_path": "src/assets/logo_svg/c.svg"
+    },
+    {
+      "name": "Confluence",
+      "img_path": "src/assets/logo_svg/confluence.svg"
+    },
+    {
+      "name": "CSS",
+      "img_path": "src/assets/logo_svg/css.svg"
+    },
+    {
+      "name": "EC2",
+      "img_path": "src/assets/logo_svg/ec2.svg"
+    },
+    {
+      "name": "Git",
+      "img_path": "src/assets/logo_svg/git.svg"
+    },
+    {
+      "name": "Github",
+      "img_path": "src/assets/logo_svg/github.svg"
+    },
+    {
+      "name": "HTML",
+      "img_path": "src/assets/logo_svg/html.svg"
+    },
+    {
+      "name": "Jest",
+      "img_path": "src/assets/logo_svg/jest.svg"
+    },
+    {
+      "name": "Jira",
+      "img_path": "src/assets/logo_svg/Jira.svg"
+    },
+    {
+      "name": "Javascript",
+      "img_path": "src/assets/logo_svg/js.svg"
+    },
+    {
+      "name": "MongoDB",
+      "img_path": "src/assets/logo_svg/mongodb.svg"
+    },
+    {
+      "name": "MySQL",
+      "img_path": "src/assets/logo_svg/mysql.svg"
+    },
+    {
+      "name": "NodeJS",
+      "img_path": "src/assets/logo_svg/nodejs.svg"
+    },
+    {
+      "name": "Python",
+      "img_path": "src/assets/logo_svg/python.svg"
+    },
+    {
+      "name": "Pytorch",
+      "img_path": "src/assets/logo_svg/pytorch.svg"
+    },
+    {
+      "name": "RDS",
+      "img_path": "src/assets/logo_svg/rds.svg"
+    },
+    {
+      "name": "Java",
+      "img_path": "src/assets/logo_svg/Java.svg"
+    },
+    {
+      "name": "Tailwind",
+      "img_path": "src/assets/logo_svg/tailwind.svg"
+    }
   ]
+  
 }

@@ -8,8 +8,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="grid">  
-        <div className="flex flex-row h-[100vh] items-center justify-start relative pb-48 ">
+      <div className="w-full flex flex-col h-[100vh] items-center justify-center relative pb-48 ">
           <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -26,24 +25,8 @@ const Hero = () => {
               Hey! I'm<br />
               <div className="inline-block bg-gradient-to-t from-pink-300 to-purple-500 bg-clip-text text-transparent font-bold ">
               <div>
-                <span className="whitespace-nowrap text-6xl md:text-9xl">
-                  <motion.div
-                  className="inline-block md:py-5"
-                  initial={{ scale: 2}}
-                  viewport={{ once: true }}
-                  whileInView={{ scale: 1 }}
-                  transition={{ duration: 0.9 }}
-                  >
-                  <motion.div
-                  className="inline-block"
-                  whileInView={{ scale: 1, transition: { duration: 0.1 } }}
-                  viewport={{ once: true}}
-                  whileHover={{ scale: 1.1, transition: { duration: 0.1 }}}
-                  >
-                    <span className="">DEV</span>
-                  </motion.div>
-                  </motion.div>
-                  <span className="inline bg-gradient-to-t from-pink-300 to-purple-500 bg-clip-text text-transparent font-bold  ">IN&nbsp;</span>
+                <span className="text-6xl md:text-9xl">
+                  <span className="inline bg-gradient-to-t from-pink-300 to-purple-500 bg-clip-text text-transparent font-bold  ">DEVIN&nbsp;</span>
                 </span>
                 <span className="block md:inline text-6xl md:text-9xl " >LIU</span> 
               </div>
@@ -68,7 +51,7 @@ const Hero = () => {
               speed={1}
               deletionSpeed={50}
               repeat={Infinity}
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-6xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text md:text-6xl text-3xl tracking-tight text-transparent"
             />
 
           </motion.div>
@@ -85,7 +68,6 @@ const Hero = () => {
             <SlidingBlocks/>
           </div> */}
         </div>
-      </div>
     </>
   )
 };

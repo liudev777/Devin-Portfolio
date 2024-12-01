@@ -71,8 +71,8 @@ const Projects = () => {
           {data.projects.map((project, index) => (
             <motion.div
               key={project.id}
-              initial={index % 2 === 1 ? { x: "2%" } : { x: "-2%" }}
-              whileInView={{ x: "0%" }}
+              initial={{y: "50%"}}
+              whileInView={{ y: "0%" }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
               className=""

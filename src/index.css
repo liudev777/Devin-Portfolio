@@ -18,7 +18,7 @@
 
 .poppins {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-style: normal;
 }
 
@@ -51,4 +51,21 @@ html {
 
 .lock-scroll {
   overflow: hidden;
+}
+
+.bg-card-black {
+  @apply bg-[#101010]
+}
+
+.bg-gradient-blue {
+  /* @apply top-0 w-full h-full bg-[radial-gradient(circle_600px_at_50%_0,rgba(63,230,226,0.075),transparent)] */
+  @apply top-0 w-full h-full bg-[radial-gradient(circle_500px_at_50%_0,rgba(168,85,247,0.1),transparent)]
+}
+
+.title-gradient {
+  @apply bg-gradient-to-r from-neutral-100 to-neutral-300 bg-clip-text text-transparent
+}
+
+.card-shadow {
+  @apply shadow-[0_3px_5px_-1px_rgba(0,0,0,1.2)]
 }
