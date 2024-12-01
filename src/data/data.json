@@ -92,83 +92,83 @@
   "tools": [
     {
       "name": "React",
-      "img_path": "/public/logo_svg/react.svg"
+      "img_path": "/logo_svg/react.svg"
     },
     {
       "name": "AWS",
-      "img_path": "/public/logo_svg/aws.svg"
+      "img_path": "/logo_svg/aws.svg"
     },
     {
       "name": "C",
-      "img_path": "/public/logo_svg/c.svg"
+      "img_path": "/logo_svg/c.svg"
     },
     {
       "name": "Confluence",
-      "img_path": "/public/logo_svg/confluence.svg"
+      "img_path": "/logo_svg/confluence.svg"
     },
     {
       "name": "CSS",
-      "img_path": "/public/logo_svg/css.svg"
+      "img_path": "/logo_svg/css.svg"
     },
     {
       "name": "EC2",
-      "img_path": "/public/logo_svg/ec2.svg"
+      "img_path": "/logo_svg/ec2.svg"
     },
     {
       "name": "Git",
-      "img_path": "/public/logo_svg/git.svg"
+      "img_path": "/logo_svg/git.svg"
     },
     {
       "name": "Github",
-      "img_path": "/public/logo_svg/github.svg"
+      "img_path": "/logo_svg/github.svg"
     },
     {
       "name": "HTML",
-      "img_path": "/public/logo_svg/html.svg"
+      "img_path": "/logo_svg/html.svg"
     },
     {
       "name": "Jest",
-      "img_path": "/public/logo_svg/jest.svg"
+      "img_path": "/logo_svg/jest.svg"
     },
     {
       "name": "Jira",
-      "img_path": "/public/logo_svg/jira.svg"
+      "img_path": "/logo_svg/jira.svg"
     },
     {
       "name": "Javascript",
-      "img_path": "/public/logo_svg/js.svg"
+      "img_path": "/logo_svg/js.svg"
     },
     {
       "name": "MongoDB",
-      "img_path": "/public/logo_svg/mongodb.svg"
+      "img_path": "/logo_svg/mongodb.svg"
     },
     {
       "name": "MySQL",
-      "img_path": "/public/logo_svg/mysql.svg"
+      "img_path": "/logo_svg/mysql.svg"
     },
     {
       "name": "NodeJS",
-      "img_path": "/public/logo_svg/nodejs.svg"
+      "img_path": "/logo_svg/nodejs.svg"
     },
     {
       "name": "Python",
-      "img_path": "/public/logo_svg/python.svg"
+      "img_path": "/logo_svg/python.svg"
     },
     {
       "name": "Pytorch",
-      "img_path": "/public/logo_svg/pytorch.svg"
+      "img_path": "/logo_svg/pytorch.svg"
     },
     {
       "name": "RDS",
-      "img_path": "/public/logo_svg/rds.svg"
+      "img_path": "/logo_svg/rds.svg"
     },
     {
       "name": "Java",
-      "img_path": "/public/logo_svg/java.svg"
+      "img_path": "/logo_svg/java.svg"
     },
     {
       "name": "Tailwind",
-      "img_path": "/public/logo_svg/tailwind.svg"
+      "img_path": "/logo_svg/tailwind.svg"
     }
   ]
   
