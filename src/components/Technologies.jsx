@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import data from '../data/data.json'
-import css from '../assets/logo_svg/css.svg'
 
 const TechCard = ({ name, img_path }) => {
     console.log(img_path)
