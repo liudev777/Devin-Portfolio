@@ -39,10 +39,15 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Keeps it in place during scrolling */
+  overflow: visible;
+}
+
+body {
+  overflow: visible;
 }
 
 .glow {
-  @apply absolute z-[-1] h-[100vh] w-full bg-[radial-gradient(circle_500px_at_50%_200px,rgba(120,119,198,0.3),transparent)]
+  @apply z-[-1] h-[100vh] w-full bg-[radial-gradient(circle_500px_at_50%_200px,rgba(120,119,198,0.3),transparent)] overflow-visible 
 }
 
 .bg {
