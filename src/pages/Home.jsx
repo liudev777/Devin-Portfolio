@@ -9,7 +9,7 @@ const Home = ({ navIsTop, setNavIsTop }) => {
 
   return (
     <>
-    <div className="flex flex-grow h-[100vh]">
+    <div className="flex flex-grow h-[100vh] ">
       
     </div>
     <Nav navIsTop={navIsTop} setNavIsTop={setNavIsTop} />

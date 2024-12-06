@@ -34,14 +34,8 @@ function App() {
       {/* Background */}
       <div
       ref={appRef}
-      className={`glow ${navIsTop ? "absolute" : "fixed"} overflow-visible `}
-      style={{
-        top: navIsTop ? `${ballPosition}px` : "0", // Dynamically set the `top` value
-        left: "50%",
-        transform: "translateX(-50%)",
-        overflow: 'visible',
-        height: '-100vh',
-      }}
+      className={`glow`}
+
       />
     <Router>
       <div className="bg"/>

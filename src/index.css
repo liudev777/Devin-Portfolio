@@ -47,7 +47,7 @@ body {
 }
 
 .glow {
-  @apply z-[-1] h-[100vh] w-full bg-[radial-gradient(circle_500px_at_50%_200px,rgba(120,119,198,0.3),transparent)] overflow-visible 
+  @apply absolute z-[-1] h-[1200vh] w-full bg-[radial-gradient(circle_500px_at_50%_948px,rgba(120,119,198,0.3),transparent)] overflow-visible 
 }
 
 .bg {
