@@ -13,10 +13,11 @@ import data from "../data/data.json"
 
 const ROUTE_ENDPOINT = "/"
 
-const Nav = ({ navIsTop, setNavIsTop }) => {
+const Nav = ({ landingRef, isHomePage=false }) => {
   const navRef = useRef(null)
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isNavTop, setIsNavTop] = useState(!isHomePage);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -42,22 +43,26 @@ const Nav = ({ navIsTop, setNavIsTop }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!navRef.current) return;
-      const navRect = navRef.current.getBoundingClientRect();
-
-      if (navRect.top <= 0) {
-        setNavIsTop(true)
-        console.log("at top")
-      } else {
-        setNavIsTop(false)
-        console.log("not there yet")
-      }
-    
       if (window.scrollY > 10) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
+      console.log(isHomePage)
+
+      if (!isHomePage || !landingRef.current) {
+        return;
+      }
+      const landingRec = landingRef.current.getBoundingClientRect();
+
+      if (landingRec.bottom <= 0) {
+        setIsNavTop(true)
+        console.log("at top")
+      } else {
+        setIsNavTop(false)
+        console.log("not there yet")
+      }
+    
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -70,7 +75,7 @@ const Nav = ({ navIsTop, setNavIsTop }) => {
     const html = document.getElementsByTagName('html')[0]
   
     if (isOpen) {
-      // html.classList.add('lock-scroll')
+      html.classList.add('lock-scroll')
     } else {
       html.classList.remove('lock-scroll')
     }
@@ -81,8 +86,8 @@ const Nav = ({ navIsTop, setNavIsTop }) => {
 
 
   return (
-    <nav className={`${navIsTop ? "fixed top-0 z-50" : "absolute z-50"} left-0 w-full transition-colors duration-300 ${
-      navIsTop && !isOpen
+    <nav className={`${isNavTop || !isHomePage ? "fixed top-0 z-50" : "absolute z-50"} left-0 w-full transition-colors duration-300 ${
+      isNavTop && !isOpen
         ? "backdrop-blur-lg bg-neutral-700 bg-opacity-30": "bg-transparent"
     }`} ref={navRef}>
 
