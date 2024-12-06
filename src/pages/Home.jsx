@@ -11,7 +11,7 @@ const Landing = ({ landingRef }) => {
   
   return (
     <div>
-      <video autoPlay loop muted playsinline className="scale-x-[-1] absolute h-[100vh] object-cover z-[-1]">
+      <video autoPlay loop muted playsinline className="scale-x-[-1] absolute h-full w-full object-cover z-[-1]">
         <source src={DevVid}/>
       </video>
       <div ref={landingRef} className="flex flex-grow flex-col justify-center h-[100vh] px-24">
