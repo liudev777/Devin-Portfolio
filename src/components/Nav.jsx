@@ -82,7 +82,7 @@ const Nav = ({ navIsTop, setNavIsTop }) => {
 
   return (
     <nav className={`${navIsTop ? "fixed top-0 z-50" : "absolute z-50"} left-0 w-full transition-colors duration-300 ${
-      isScrolled && !isOpen
+      navIsTop && !isOpen
         ? "backdrop-blur-lg bg-neutral-700 bg-opacity-30": "bg-transparent"
     }`} ref={navRef}>
 
