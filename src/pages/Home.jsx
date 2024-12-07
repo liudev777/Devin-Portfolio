@@ -28,7 +28,7 @@ const TextReveal = ({ text, speed=100, revealSpeed=200, className="" }) => {
         .split("")
         .map((_, index) => (index < currentLength ? text[index] : randomHiragana()))
         .join("")
-      )
+      );
     }, speed)
 
     const revealInterval = setInterval(() => {
@@ -44,6 +44,9 @@ const TextReveal = ({ text, speed=100, revealSpeed=200, className="" }) => {
     return () => {
       clearInterval(randomInterval);
       clearInterval(revealInterval);
+
+      setRandomChars(text);
+      setDisplayedText(text);
     };
   }, [text, speed, revealSpeed])
 
@@ -98,14 +101,14 @@ const Landing = ({ landingRef }) => {
         <div className="m-0 eva-font1 flex flex-col justify-start">
           <motion.div className="text-8xl">
             <TextReveal className={"m-0 text-8xl eva-font1"} text={"DEVIN"} speed={30} revealSpeed={200}/>
-            <TextReveal className={"text-8xl eva-font1"} text={"LIU"} speed={30} revealSpeed={200}/>
+            <TextReveal className={"text-8xl eva-font1"} text={"LIU"} speed={30} revealSpeed={400}/>
             <TextReveal className={"text-[10rem] eva-font1 text-nowrap overflow-clip"} text={"PORTFOLIO"} speed={30} revealSpeed={100}/>
             
           </motion.div>
         </div>
         <TextReveal className={"text-5xl my-10 eva-font2"} text={"SOFTWARE DEVELOPER"} speed={30} revealSpeed={60}/>
         <div className="eva-font3 text-4xl">
-        <TextReveal className={"my-10 text-nowrap overflow-clip"} text={"I much more than just a code monkey"} speed={30} revealSpeed={20}/>
+        <TextReveal className={"my-10 text-nowrap overflow-clip"} text={"Much more than just a code monkey"} speed={30} revealSpeed={30}/>
           
         </div>
       </div>
