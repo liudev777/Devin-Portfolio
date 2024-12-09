@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col h-[100vh] items-center justify-center relative pb-48 ">
+      <div className="w-full flex flex-col h-[100vh] items-start justify-center relative mb-48 ">
           <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -23,10 +23,10 @@ const Hero = () => {
             className="text-3xl md:text-6xl md:mb-4 font-extralight"
             >
               Hey! I'm<br />
-              <div className="inline-block bg-gradient-to-t from-pink-300 to-purple-500 bg-clip-text text-transparent font-bold ">
+              <div className="inline-block font-bold ">
               <div>
                 <span className="text-6xl md:text-9xl">
-                  <span className="inline bg-gradient-to-t from-pink-300 to-purple-500 bg-clip-text text-transparent font-bold  ">DEVIN&nbsp;</span>
+                  <span className=" font-bold  ">DEVIN&nbsp;</span>
                 </span>
                 <span className="block md:inline text-6xl md:text-9xl " >LIU</span> 
               </div>
@@ -51,7 +51,7 @@ const Hero = () => {
               speed={1}
               deletionSpeed={50}
               repeat={Infinity}
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text md:text-6xl text-3xl tracking-tight text-transparent"
+              className=" md:text-6xl text-3xl tracking-tight "
             />
 
           </motion.div>
