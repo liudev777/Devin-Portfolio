@@ -2,48 +2,185 @@
     "name": "Devin Liu",
     "about": "I'm a full-stack developer based in Chicago. I like building random useful stuff, whether that be websites, mobile apps, or automation tools. I'm passionate about learning new tech and applying them to projects to solve real-world problems",
 
+    "tool_names": [
+      {
+        "name": "React",
+        "color": "bg-blue-500"
+      },
+      {
+        "name": "AWS",
+        "color": "bg-orange-400"
+      },
+      {
+        "name": "C",
+        "color": ""
+      },
+      {
+        "name": "Confluence",
+        "color": ""
+      },
+      {
+        "name": "CSS",
+        "color": "bg-blue-600"
+      },
+      {
+        "name": "EC2",
+        "color": "bg-cyan-800"
+      },
+      {
+        "name": "Git",
+        "color": ""
+      },
+      {
+        "name": "Github",
+        "color": ""
+      },
+      {
+        "name": "HTML",
+        "color": "bg-orange-600"
+      },
+      {
+        "name": "Jest",
+        "color": ""
+      },
+      {
+        "name": "Jira",
+        "color": ""
+      },
+      {
+        "name": "Javascript",
+        "color": "bg-yellow-500"
+      },
+      {
+        "name": "MongoDB",
+        "color": "bg-green-600"
+      },
+      {
+        "name": "MySQL",
+        "color": "bg-cyan-700"
+      },
+      {
+        "name": "NodeJS",
+        "color": "bg-green-600"
+      },
+      {
+        "name": "Python",
+        "color": "bg-blue-500"
+      },
+      {
+        "name": "Pytorch",
+        "color": "bg-orange-600"
+      },
+      {
+        "name": "RDS",
+        "color": "bg-cyan-800"
+      },
+      {
+        "name": "Java",
+        "color": "bg-orange-600"
+      },
+      {
+        "name": "Tailwind",
+        "color": "bg-teal-600"
+      },
+      {
+        "name": "Vercel",
+        "color": "bg-neutral-600"
+      },
+      {
+        "name": "Springboot",
+        "color": "bg-green-600"
+      },
+      {
+        "name": "Selenium",
+        "color": "bg-green-600"
+      },
+      {
+        "name": "OpenAI-API",
+        "color": "bg-neutral-600"
+      }, 
+      {
+        "name": "MNE",
+        "color": "bg-neutral-600"
+      },
+      {
+        "name": "Matplotlib",
+        "color": "bg-neutral-600"
+      },
+      {
+        "name": "Flask",
+        "color": "bg-neutral-600"
+      },
+      {
+        "name": "React Native",
+        "color": "bg-blue-500"
+      },
+      {
+        "name": "Websocket",
+        "color": "bg-red-800"
+      },
+      {
+        "name": "PostgreSQL",
+        "color": "bg-blue-600"
+      },
+      {
+        "name": "BeautifulSoup",
+        "color": "bg-neutral-600"
+      },
+      {
+        "name": "Heroku",
+        "color": "bg-purple-600"
+      }
+    ],
+
     "projects": [
       {
         "title": "Devin's Portfolio",
         "alt": "Personal Portfolio Site",
         "description": "The website you are currently on. It showcases my project, experience, as well as some of my hobbies. This personal site is built and deployed on Vercel using React and Vite.js frontend, styled with Tailwind CSS and the Framer-Motion library.",
         "img_url": null,
-        "github_url": "https://www.github.com/liudev777"
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["React", "Tailwind", "Javascript", "HTML", "Vercel"]
       },
       {
         "title": "CareerProMatch",
         "alt": "Ai enhanced job board",
         "description": "Whats better than a regular job board like indeed that gives you sorta relevant jobs? An AI-powered job board that gives you definitely relevant jobs! CareerProMatch delivers tailored job recommendations using React, Java Spring Boot and MySQL and automates job postings with Selenium web scraping. It is (was) deployed on AWS EC2 and RDS. ",
         "img_url": null,
-        "github_url": "https://www.github.com/liudev777"
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["React", "Javascript", "CSS", "HTML", "Java", "Springboot", "MySQL", "AWS", "EC2", "RDS", "Selenium", "OpenAI-API"]
       },
       {
         "title": "Re:Eval Epilepsy",
         "alt": "Epilepsy diagnosis re-evaluation site",
         "description": "Don't you just hate it when your doctor accidentally misdiagnoses you with epilepsy and causes you to lose your drivers license? Re:Eval Epilepsy is a website that integrates a ML model to reduce epilepsy misdiagnosis, achieving 78% classification accuracy for abnormal EEG recordings.",
         "img_url": null,
-        "github_url": "https://www.github.com/liudev777" 
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["Python", "Pytorch", "Flask", "MNE", "Matplotlib"] 
       },
       {
         "title": "S2K Mapper",
         "alt": "Kiosk Square® payment mapping tool",
         "description": "Everyone hates tedious tasks, especially me (hence why I became a software engineer). Therefore I made an automation tool during my free time for my software QA internship to streamline the mapping of Square® payment devices to self-checkout kiosks using React Native, Node.js, and Websocket. Instead of manually entering serial numbers and pairing them in the companys slow web tool, I can now take a picture of the serial number and it'll do the job for me!",
         "img_url": null,
-        "github_url": "https://www.github.com/liudev777"
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["React Native", "NodeJS", "Websocket"]
       },
       {
         "title": "Discord Job Bot",
         "alt": "SWE job posting Discord bot",
         "description": "Discord Job Bot (very creative name) is a Discord bot that provides real-time SWE job listings based on user preferences such as seniority and location. It uses AWS RDS and BeautifulSoup for efficient data scraping. While we are at it, why not throw in daily LeetCode practices just for fun.",
         "img_url": null,
-        "github_url": "https://www.github.com/liudev777"
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["Python", "PostgreSQL", "AWS", "RDS", "BeautifulSoup"]
       },
       {
         "title": "AniBot",
         "alt": "Hackathon Discord anime scheduler bot",
         "description": "During covid, everyone was streaming anime in Discord with their friends. Wouldn't it be nice to have a Bot that reminds you when your favorite show airs? AniBot is (was) deployed on Heroku with OAuth integration for Anilist API to keep all those questionable animes you have been watching secure. It includes real-time notifications for airing shows. Preference data is stored in Supabase SQL database.",
         "img_url": null,
-        "github_url": "https://www.github.com/liudev777"
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["Python", "Heroku", "MongoDB"]
       }
     ],
 
@@ -169,6 +306,10 @@
     {
       "name": "Tailwind",
       "img_path": "/logo_svg/tailwind.svg"
+    },
+    {
+      "name": "Vercel",
+      "img_path": "/logo_svg/vercel.svg"
     }
   ]
   

@@ -2,8 +2,18 @@ import { motion } from "framer-motion";
 import { AiOutlineGithub } from 'react-icons/ai';
 import data from "../data/data.json";
 import laptop from "../assets/laptop.jpg";
+import { div } from "framer-motion/client";
 
-const ProjectCard = ({ img, title, alt, description, github_url, index }) => {
+const ToolIcon = ({ name, color }) => {
+  console.log("color: ", color)
+  return (
+    <div className={`${color} px-2 py-1 rounded`}>
+      {name}
+    </div>
+  )
+}
+
+const ProjectCard = ({ img, title, alt, description, github_url, tool_names, index }) => {
   const reverse = index % 2 === 1
   return (
     <div className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} gap-8`}>
@@ -24,6 +34,15 @@ const ProjectCard = ({ img, title, alt, description, github_url, index }) => {
         <h3 className="text-2xl text-purple-300">{title}</h3>
         <h3 className="text-gray-300 font-extralight italic mb-4">{alt}</h3>
         <p className="text-gray-300 font-light mb-4">{description}</p>
+        <div className="mb-4 flex gap-2 flex-wrap">
+          {tool_names.map((tool_name, index) => {
+            const tool_data = data.tool_names.find((tool) => tool.name === tool_name)
+            console.log(tool_data)
+            return (
+              <ToolIcon name={tool_data.name} color={tool_data.color.toString()} key={index}/>
+            )
+          })}
+        </div>
         <div className="flex space-x-4">
           {github_url && (
             <motion.div
@@ -83,6 +102,7 @@ const Projects = () => {
                 alt={project.alt}
                 description={project.description}
                 github_url={project.github_url}
+                tool_names={project.tool_names}
                 index={index}
               />
             </motion.div>
