@@ -138,7 +138,7 @@
         "title": "Devin's Portfolio",
         "alt": "Personal Portfolio Site",
         "description": "The website you are currently on. It showcases my project, experience, as well as some of my hobbies. This personal site is built and deployed on Vercel using React and Vite.js frontend, styled with Tailwind CSS and the Framer-Motion library.",
-        "img_url": null,
+        "img_url": "/project_gifs/portfolio_site.gif",
         "github_url": "https://www.github.com/liudev777",
         "tool_names": ["React", "Tailwind", "Javascript", "HTML", "Vercel"]
       },
@@ -170,7 +170,7 @@
         "title": "Discord Job Bot",
         "alt": "SWE job posting Discord bot",
         "description": "Discord Job Bot (very creative name) is a Discord bot that provides real-time SWE job listings based on user preferences such as seniority and location. It uses AWS RDS and BeautifulSoup for efficient data scraping. While we are at it, why not throw in daily LeetCode practices just for fun.",
-        "img_url": null,
+        "img_url": "/project_gifs/discord_job_bot.gif",
         "github_url": "https://www.github.com/liudev777",
         "tool_names": ["Python", "PostgreSQL", "AWS", "RDS", "BeautifulSoup"]
       },
@@ -178,7 +178,7 @@
         "title": "AniBot",
         "alt": "Hackathon Discord anime scheduler bot",
         "description": "During covid, everyone was streaming anime in Discord with their friends. Wouldn't it be nice to have a Bot that reminds you when your favorite show airs? AniBot is (was) deployed on Heroku with OAuth integration for Anilist API to keep all those questionable animes you have been watching secure. It includes real-time notifications for airing shows. Preference data is stored in Supabase SQL database.",
-        "img_url": null,
+        "img_url": "/project_gifs/anibot.gif",
         "github_url": "https://www.github.com/liudev777",
         "tool_names": ["Python", "Heroku", "MongoDB"]
       }
@@ -311,6 +311,177 @@
       "name": "Vercel",
       "img_path": "/logo_svg/vercel.svg"
     }
+  ],
+  "arts": [
+    {
+      "title": "Group Study",
+      "full_image_url": "/images/artwork/girl.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_girl.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "2B Fanart",
+      "full_image_url": "/images/artwork/2b.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_2b.jpg",
+      "crop": "0% 0%"
+    },
+    {
+      "title": "Forlorn Asuka",
+      "full_image_url": "/images/artwork/asuka.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_asuka.jpg",
+      "crop": "70%"
+    },
+    {
+      "title": "Bunny Composer 2B",
+      "full_image_url": "/images/artwork/bunny2b.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_bunny2b.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Shinobu Fanart",
+      "full_image_url": "/images/artwork/butterfly.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_butterfly.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "My Calc 3 Homework",
+      "full_image_url": "/images/artwork/calc.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_calc.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Whimsical Forest",
+      "full_image_url": "/images/artwork/elf.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_elf.jpg",
+      "crop": "20%"
+    },
+    {
+      "title": "邓紫棋",
+      "full_image_url": "/images/artwork/gem.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_gem.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "Style Study",
+      "full_image_url": "/images/artwork/glare.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_glare.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Yellow Sunglasses",
+      "full_image_url": "/images/artwork/glasses.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_glasses.jpg",
+      "crop": "50% 20%"
+    },
+    {
+      "title": "Kimono Girl",
+      "full_image_url": "/images/artwork/kimono.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_kimono.jpg",
+      "crop": "50% 10%"
+    },
+    {
+      "title": "Kimono Komi",
+      "full_image_url": "/images/artwork/komi.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_komi.jpg",
+      "crop": "20%"
+    },
+    {
+      "title": "Battle Maid",
+      "full_image_url": "/images/artwork/maid.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_maid.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "Beautifullest",
+      "full_image_url": "/images/artwork/most_beautiful_girl_on_earth.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_most_beautiful_girl_on_earth.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Top Down",
+      "full_image_url": "/images/artwork/orange.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_orange.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "Tadamon",
+      "full_image_url": "/images/artwork/pokikomi.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_pokikomi.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Princess",
+      "full_image_url": "/images/artwork/princess.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_princess.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Purple",
+      "full_image_url": "/images/artwork/purple.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_purple.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Qi",
+      "full_image_url": "/images/artwork/qi.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_qi.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Reol Fanart",
+      "full_image_url": "/images/artwork/reol.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_reol.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Shattered",
+      "full_image_url": "/images/artwork/shatter.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_shatter.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Terminator Line Study",
+      "full_image_url": "/images/artwork/soldier.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_soldier.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "Realism Study",
+      "full_image_url": "/images/artwork/study.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_study.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Katana",
+      "full_image_url": "/images/artwork/sword.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_sword.jpg",
+      "crop": "50% 20%"
+    },
+    {
+      "title": "Tifa Fanart",
+      "full_image_url": "/images/artwork/tifa.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_tifa.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Slice of Life",
+      "full_image_url": "/images/artwork/time.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_time.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Umbrella",
+      "full_image_url": "/images/artwork/umbrella.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_umbrella.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Yor Fanart",
+      "full_image_url": "/images/artwork/yor.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_yor.jpg",
+      "crop": ""
+    }
+
   ]
   
 }

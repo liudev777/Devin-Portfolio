@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { AiOutlineGithub } from 'react-icons/ai';
 import data from "../data/data.json";
 import laptop from "../assets/laptop.jpg";
-import { div } from "framer-motion/client";
 
 const ToolIcon = ({ name, color }) => {
   console.log("color: ", color)
@@ -23,7 +22,7 @@ const ProjectCard = ({ img, title, alt, description, github_url, tool_names, ind
       whileHover={{ scale: 1.05, transition: { duration: 0.1 }}}
       >
         <img
-          src={laptop}
+          src={img || laptop}
           alt={title}
           className="w-full h-full object-cover rounded-lg shadow-lg"
         />
@@ -37,9 +36,8 @@ const ProjectCard = ({ img, title, alt, description, github_url, tool_names, ind
         <div className="mb-4 flex gap-2 flex-wrap">
           {tool_names.map((tool_name, index) => {
             const tool_data = data.tool_names.find((tool) => tool.name === tool_name)
-            console.log(tool_data)
             return (
-              <ToolIcon name={tool_data.name} color={tool_data.color.toString()} key={index}/>
+              <ToolIcon name={tool_data.name} color={tool_data.color} key={index}/>
             )
           })}
         </div>

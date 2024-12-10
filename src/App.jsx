@@ -1,4 +1,5 @@
 import Home from "./pages/Home";
+import Art from "./pages/Art"
 import Nav from "./components/Nav";
 // import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -17,8 +18,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path={ROUTE_ENDPOINT} element={<Home />} />
-          <Route path={ROUTE_ENDPOINT + "art"} element={<></>} />
-          <Route path={ROUTE_ENDPOINT + "photography"} element={<></>} />
+          <Route path={ROUTE_ENDPOINT + "art"} element={<Art />} />
         </Routes>
       </div>
     </Router>

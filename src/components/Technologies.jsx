@@ -19,7 +19,7 @@ function Technologies() {
             className='flex flex-col py-10 px-6 items-center justify-end bg-card-black rounded-xl card-shadow gap-y-2 text-[#5c5c5c] hover:bg-pink-300 transition-all delay-100'
             initial={{ opacity: 0, scale: 1.5 }}
             animate={hasTriggered? {opacity: 1 , scale: 1} : {opacity: 0, scale: 1.5}}
-            transition={{ duration: 0.01, delay: i*0.1, ease: easeInOut}}
+            transition={{ duration: 0.01, delay: i*0.05, ease: easeInOut}}
             >
                 <div className='flex flex-col align-center justify-center h-full'>
                     <img src={img_path} width={70}/>
