@@ -142,9 +142,9 @@ const Experience = ({ company, title, from, to, description, index }) => {
   );
 };
 
-function Timeline() {
+function Timeline({ experienceRef }) {
   return (
-    <div className="relative z-10 w-full h-auto bg-transparent p-4">
+    <div id="experience" ref={experienceRef} className="relative z-10 w-full h-auto bg-transparent p-4">
         <motion.h2
           initial={{ x: "-100%" }}
           whileInView={{ x: "0%" }}

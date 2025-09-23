@@ -13,7 +13,7 @@
   font-family: "Cal Sans", sans-serif;
   
   color: #f5f5f5;
-  @apply selection:bg-[rgba(155,128,197,255)] selection:text-white;
+  @apply selection:bg-[rgba(155,128,197,255)] selection:text-black;
 }
 
 .poppins {

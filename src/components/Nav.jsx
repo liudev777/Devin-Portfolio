@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { useLocation } from "react-router-dom";
 import { 
   FaInstagram,
   FaLinkedin,
+  
   FaGithub
  } from 'react-icons/fa';
  import { MdDownload } from "react-icons/md";
@@ -13,9 +15,10 @@ import data from "../data/data.json"
 
 const ROUTE_ENDPOINT = "/"
 
-const Nav = () => {
+const Nav = ({ projectRef, experienceRef, aboutRef }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -68,6 +71,51 @@ const Nav = () => {
   }, [isOpen])
 
 
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      const elementTop = ref.current.getBoundingClientRect().top;
+      const offset = -100; // Adjust based on navbar height
+      const scrollPosition = window.scrollY + elementTop + offset;
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleScroll = (e, ref, location) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    window.location.replace("/#" + location)
+    scrollToSection(ref); // Trigger custom scrolling
+  };
+
+  useEffect(() => {
+    // On page load or route change, scroll to the section specified by the hash
+    const hash = location.hash;
+    if (hash) {
+      const targetRef =
+        hash === "#experience"
+          ? experienceRef
+          : hash === "#project"
+          ? projectRef
+          : hash === "#about"
+          ? aboutRef
+          : null;
+
+      if (targetRef?.current) {
+        const offset = -100; // Adjust for navbar height
+        const elementTop = targetRef.current.getBoundingClientRect().top;
+        const scrollPosition = window.scrollY + elementTop + offset;
+
+        window.scrollTo({
+          top: scrollPosition,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]); // Run this whenever the location changes
+
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
       isScrolled && !isOpen
@@ -92,8 +140,11 @@ const Nav = () => {
           </a>
         </li>
         </ul>
-        <ul className="hidden md:flex gap-12 z-50">
-          <li><a href={ROUTE_ENDPOINT} className="link-hover">Home</a></li>
+        <ul className="hidden md:flex gap-12 z-50 poppins">
+          <li><a href="/#home" className="link-hover">Home</a></li>
+          <li><a href="#experience" className="link-hover" onClick={(e) => handleScroll(e, experienceRef, "experience")}>Experience</a></li>
+          <li><a href="#project" className="link-hover" onClick={(e) => handleScroll(e, projectRef, "project")}>Projects</a></li>
+          <li><a href="#about" className="link-hover" onClick={(e) => handleScroll(e, aboutRef, "about")}>About</a></li>
           <li><a href={ROUTE_ENDPOINT + "art"} className="link-hover">Art</a></li>
         </ul>
 

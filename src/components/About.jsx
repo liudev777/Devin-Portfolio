@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import me from '../assets/me.png'
 import data from '../data/data.json'
 
-function About() {
+function About({ aboutRef }) {
   return (
-    <div className='flex flex-col items-center'>
+    <div id="about" ref={aboutRef} className='flex flex-col items-center'>
       <motion.h2
           initial={{ x: "-100%" }}
           whileInView={{ x: "0%" }}

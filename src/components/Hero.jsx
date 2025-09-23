@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col h-[100vh] items-center justify-center relative pb-48 ">
+      <div id="home" className="w-full flex flex-col h-[100vh] items-center justify-center relative pb-48 ">
           <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}

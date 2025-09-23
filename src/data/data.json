@@ -154,7 +154,7 @@
         "title": "Re:Eval Epilepsy",
         "alt": "Epilepsy diagnosis re-evaluation site",
         "description": "Don't you just hate it when your doctor accidentally misdiagnoses you with epilepsy and causes you to lose your drivers license? Re:Eval Epilepsy is a website that integrates a ML model to reduce epilepsy misdiagnosis, achieving 78% classification accuracy for abnormal EEG recordings.",
-        "img_url": null,
+        "img_url": "/project_gifs/Re-Eval-Epilepsy.gif",
         "github_url": "https://www.github.com/liudev777",
         "tool_names": ["Python", "Pytorch", "Flask", "MNE", "Matplotlib"] 
       },

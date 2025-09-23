@@ -63,9 +63,9 @@ const ProjectCard = ({ img, title, alt, description, github_url, tool_names, ind
   );
 };
 
-const Projects = () => {
+const Projects = ({ projectRef }) => {
   return (
-    <div className="md:max-w-[1000px] mx-auto md:my-20">
+    <div id="project" ref={projectRef} className="md:max-w-[1000px] mx-auto md:my-20">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
