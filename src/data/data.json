@@ -1,6 +1,6 @@
 {
     "name": "Devin Liu",
-    "about": "I'm a full-stack developer based in Chicago. I like building random useful stuff, whether that be websites, mobile apps, or automation tools. I'm passionate about learning new tech and applying them to projects to solve real-world problems",
+    "about": "I'm a full-stack developer based in Chicago. I like building useful tools, whether that be websites, mobile apps, or automation tools. However, my edge comes beyond just coding - I have a passion for art and design, which allows me to find patterns others miss, and embrace unconventional solutions. When I'm not coding, you can find me playing at the gym, drawing, playing badminton, or trying out new stuff.",
 
     "tool_names": [
       {
@@ -57,6 +57,10 @@
       },
       {
         "name": "MySQL",
+        "color": "bg-cyan-700"
+      },
+      {
+        "name": "NextJS",
         "color": "bg-cyan-700"
       },
       {
@@ -130,10 +134,26 @@
       {
         "name": "Heroku",
         "color": "bg-purple-600"
+      },
+      {
+        "name": "TypeScript",
+        "color": "bg-blue-900"
+      },
+      {
+        "name": "Square API",
+        "color": "bg-neutral-600"
       }
     ],
 
     "projects": [
+      {
+        "title": "Chinafastwok ordering site",
+        "alt": "Self Ordering Platfrom for local restaurant",
+        "description": "Grubhub takes 20%-30% from every sale a restaurant makes through their platform (I wanted to make a joke here but I will refrain in case a Grubhub recruiter is actually reading this). Therefore, I took it upon myself to build them a self ordering site for existing customers that offsets the 3rd party cost from 30% to only 2.9%. Profits!.",
+        "img_url": "/project_gifs/cfw.png",
+        "github_url": "",
+        "tool_names": ["NextJS", "React", "TypeScript", "HTML", "CSS", "Vercel", "Square API"]
+      },
       {
         "title": "Devin's Portfolio",
         "alt": "Personal Portfolio Site",
@@ -190,6 +210,20 @@
     "instagram": "https://www.instagram.com/d.liuliuliu"
   },
   "experiences": [
+    {
+      "company": "City of Chicago (Contract)",
+      "title": "Full Stack Engineer",
+      "from": "09/2025",
+      "to": "Current",
+      "description": "Working with 11th Ward Alderman's office to build a civic platform for residents to get quick access to local resources and events and file complaints, using React and Supabase."
+    },
+    {
+      "company": "State Farm",
+      "title": "Software Engineer Intern",
+      "from": "05/2025",
+      "to": "08/2025",
+      "description": "Automated Quicksight Dashboard embed sharing for research analysts so that they can share dashboards with stakeholders without needing to manually build filters, using AWS Lambda, Quicksight API, and Python."
+    },
     {
       "company": "State Farm",
       "title": "Software Engineer Intern",
