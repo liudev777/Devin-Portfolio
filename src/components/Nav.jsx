@@ -10,7 +10,8 @@ import {
  } from 'react-icons/fa';
  import { MdDownload } from "react-icons/md";
 
-import resume from "../assets/Devin_Liu_Resume_2025.pdf"
+// import resume from "../assets/Devin_Liu_Resume_2025.pdf"
+import Resume from "./Resume";
 import data from "../data/data.json"
 
 const ROUTE_ENDPOINT = "/"
@@ -130,7 +131,7 @@ const Nav = ({ projectRef, experienceRef, aboutRef }) => {
           <li>
           <a
             className="flex items-center space-x-2 px-3 py-1 rounded-lg border cursor-pointer hover:bg-purple-300 hover:text-neutral-900 hover:border-purple-300 duration-300"
-            href={resume}
+            href='/resume'
 
             target="_blank"
             // download
@@ -164,7 +165,7 @@ const Nav = ({ projectRef, experienceRef, aboutRef }) => {
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
         variants={menuVariants}
-        className="fixed left-0 top-0 w-full h-full backdrop-blur-lg bg-neurtal-700 bg-opacity-30 z-40 md:invisible "
+        className="fixed left-0 top-0 w-full h-full bg-neutral-700 bg-opacity-100 z-40 md:invisible "
         >         
           <ul className="font-thin text-xl space-y-8 mt-24 text-center">
             <li><a href={ROUTE_ENDPOINT} className="link-hover">Home</a></li>
@@ -180,7 +181,7 @@ const Nav = ({ projectRef, experienceRef, aboutRef }) => {
             {/* CV Download Button */}
             <a
               className="flex items-center space-x-2 px-3 py-1 rounded-lg border cursor-pointer hover:text-purple-300 hover:border-purple-300 duration-300"
-              href={resume}
+              href="/resume"
               target="_blank"
               // download
             >

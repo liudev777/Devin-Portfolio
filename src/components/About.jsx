@@ -16,7 +16,7 @@ function About({ aboutRef }) {
           About Me
           <p className="text-sm opacity-50">(Who am I?)</p>
         </motion.h2>
-        <motion.div className='flex flex-row items-center gap-x-16 max-w-[1000px]'>        
+        <motion.div className='flex flex-col md:flex-row items-center gap-x-16 max-w-[1000px]'>        
             <motion.img
             src={me}
             alt="Profile"

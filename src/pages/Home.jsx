@@ -10,7 +10,7 @@ const Home = ({ projectRef, experienceRef, aboutRef }) => {
 
 
   return (
-    <div className="flex flex-col items-center md:mx-32 gap-y-16">  
+    <div className="flex flex-col items-center md:mx-32 gap-y-16 p-8 md:p-16 pb-16">  
       <Hero />
       <Technologies />
       <Timeline experienceRef={experienceRef}/>
