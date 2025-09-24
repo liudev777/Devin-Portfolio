@@ -132,7 +132,7 @@ const Nav = ({ projectRef, experienceRef, aboutRef }) => {
             className="flex items-center space-x-2 px-3 py-1 rounded-lg border cursor-pointer hover:bg-purple-300 hover:text-neutral-900 hover:border-purple-300 duration-300"
             href={resume}
 
-            target="_blank"
+            // target="_blank"
             // download
           >
             <MdDownload size={20} />
