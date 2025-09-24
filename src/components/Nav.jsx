@@ -133,7 +133,7 @@ const Nav = ({ projectRef, experienceRef, aboutRef }) => {
             href={resume}
 
             target="_blank"
-            download
+            // download
           >
             <MdDownload size={20} />
             <span className="text-sm">CV</span>
