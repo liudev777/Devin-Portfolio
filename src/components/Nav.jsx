@@ -1,21 +1,25 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { useLocation } from "react-router-dom";
 import { 
   FaInstagram,
   FaLinkedin,
+  
   FaGithub
  } from 'react-icons/fa';
  import { MdDownload } from "react-icons/md";
 
-import resume from "../assets/Devin_Liu_Resume_2025.pdf"
+// import resume from "../assets/Devin_Liu_Resume_2025.pdf"
+import Resume from "./Resume";
 import data from "../data/data.json"
 
 const ROUTE_ENDPOINT = "/"
 
-const Nav = () => {
+const Nav = ({ projectRef, experienceRef, aboutRef }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -68,6 +72,51 @@ const Nav = () => {
   }, [isOpen])
 
 
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      const elementTop = ref.current.getBoundingClientRect().top;
+      const offset = -100; // Adjust based on navbar height
+      const scrollPosition = window.scrollY + elementTop + offset;
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleScroll = (e, ref, location) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    window.location.replace("/#" + location)
+    scrollToSection(ref); // Trigger custom scrolling
+  };
+
+  useEffect(() => {
+    // On page load or route change, scroll to the section specified by the hash
+    const hash = location.hash;
+    if (hash) {
+      const targetRef =
+        hash === "#experience"
+          ? experienceRef
+          : hash === "#project"
+          ? projectRef
+          : hash === "#about"
+          ? aboutRef
+          : null;
+
+      if (targetRef?.current) {
+        const offset = -100; // Adjust for navbar height
+        const elementTop = targetRef.current.getBoundingClientRect().top;
+        const scrollPosition = window.scrollY + elementTop + offset;
+
+        window.scrollTo({
+          top: scrollPosition,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]); // Run this whenever the location changes
+
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
       isScrolled && !isOpen
@@ -82,20 +131,22 @@ const Nav = () => {
           <li>
           <a
             className="flex items-center space-x-2 px-3 py-1 rounded-lg border cursor-pointer hover:bg-purple-300 hover:text-neutral-900 hover:border-purple-300 duration-300"
-            href={resume}
+            href='/resume'
 
             target="_blank"
-            download
+            // download
           >
             <MdDownload size={20} />
             <span className="text-sm">CV</span>
           </a>
         </li>
         </ul>
-        <ul className="hidden md:flex gap-12 z-50">
-          <li><a href={ROUTE_ENDPOINT} className="link-hover">Home</a></li>
+        <ul className="hidden md:flex gap-12 z-50 poppins">
+          <li><a href="/#home" className="link-hover">Home</a></li>
+          <li><a href="#experience" className="link-hover" onClick={(e) => handleScroll(e, experienceRef, "experience")}>Experience</a></li>
+          <li><a href="#project" className="link-hover" onClick={(e) => handleScroll(e, projectRef, "project")}>Projects</a></li>
+          <li><a href="#about" className="link-hover" onClick={(e) => handleScroll(e, aboutRef, "about")}>About</a></li>
           <li><a href={ROUTE_ENDPOINT + "art"} className="link-hover">Art</a></li>
-          <li><a href={ROUTE_ENDPOINT + "photography"} className="link-hover">Photography</a></li>
         </ul>
 
 
@@ -114,12 +165,11 @@ const Nav = () => {
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
         variants={menuVariants}
-        className="fixed left-0 top-0 w-full h-full backdrop-blur-lg bg-neurtal-700 bg-opacity-30 z-40 md:invisible "
+        className="fixed left-0 top-0 w-full h-full bg-neutral-700 bg-opacity-100 z-40 md:invisible "
         >         
           <ul className="font-thin text-xl space-y-8 mt-24 text-center">
             <li><a href={ROUTE_ENDPOINT} className="link-hover">Home</a></li>
             <li><a href={ROUTE_ENDPOINT +"art"} className="link-hover">Art</a></li>
-            <li><a href={ROUTE_ENDPOINT +"photography"} className="link-hover">Photography</a></li>
           </ul>
           <div className="flex flex-col items-center mt-12 space-y-8">
             <div className="flex space-x-6">
@@ -131,9 +181,9 @@ const Nav = () => {
             {/* CV Download Button */}
             <a
               className="flex items-center space-x-2 px-3 py-1 rounded-lg border cursor-pointer hover:text-purple-300 hover:border-purple-300 duration-300"
-              href={resume}
+              href="/resume"
               target="_blank"
-              download
+              // download
             >
               <MdDownload size={20} />
               <span className="text-sm">CV</span>

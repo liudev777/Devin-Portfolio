@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,400;0,700;1,100;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital@0;1&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;0,700;1,100;1,400&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -7,9 +9,17 @@
 
 :root {
   /* font-family: "Inter", sans-serif; */
-  font-family: "Space Grotesk", sans-serif;
+  /* font-family: "Space Grotesk", sans-serif; */
+  font-family: "Cal Sans", sans-serif;
+  
   color: #f5f5f5;
-  @apply selection:bg-[rgba(155,128,197,255)] selection:text-white;
+  @apply selection:bg-[rgba(155,128,197,255)] selection:text-black;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
 }
 
 .link-hover {
@@ -41,4 +51,21 @@ html {
 
 .lock-scroll {
   overflow: hidden;
+}
+
+.bg-card-black {
+  @apply bg-[#101010]
+}
+
+.bg-gradient-blue {
+  /* @apply top-0 w-full h-full bg-[radial-gradient(circle_600px_at_50%_0,rgba(63,230,226,0.075),transparent)] */
+  @apply top-0 w-full h-full bg-[radial-gradient(circle_500px_at_50%_0,rgba(168,85,247,0.1),transparent)]
+}
+
+.title-gradient {
+  @apply bg-gradient-to-r from-neutral-100 to-neutral-300 bg-clip-text text-transparent
+}
+
+.card-shadow {
+  @apply shadow-[0_3px_5px_-1px_rgba(0,0,0,1.2)]
 }

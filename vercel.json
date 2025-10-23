@@ -2,7 +2,8 @@
   "rewrites": [{ "source": "/(.*)", "destination": "/" }],
   "git": {
     "deploymentEnabled": {
-      "dev-env": false
+      "dev-env": false,
+      "v2": true
     }
   }
 }

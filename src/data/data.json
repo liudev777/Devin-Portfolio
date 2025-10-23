@@ -1,49 +1,206 @@
 {
     "name": "Devin Liu",
-    "about": "I'm a full-stack developer based in Chicago. I like building random useful stuff, whether that be websites, mobile apps, or automation tools. I'm passionate about learning new tech and applying them to projects to solve real-world problems",
+    "about": "I'm a full-stack developer based in Chicago. I like building useful tools, whether that be websites, mobile apps, or automation tools. However, my edge comes beyond just coding - I have a passion for art and design, which allows me to find patterns others miss, and embrace unconventional solutions. When I'm not coding, you can find me playing at the gym, drawing, playing badminton, or trying out new stuff.",
+
+    "tool_names": [
+      {
+        "name": "React",
+        "color": "bg-blue-500"
+      },
+      {
+        "name": "AWS",
+        "color": "bg-orange-400"
+      },
+      {
+        "name": "C",
+        "color": ""
+      },
+      {
+        "name": "Confluence",
+        "color": ""
+      },
+      {
+        "name": "CSS",
+        "color": "bg-blue-600"
+      },
+      {
+        "name": "EC2",
+        "color": "bg-cyan-800"
+      },
+      {
+        "name": "Git",
+        "color": ""
+      },
+      {
+        "name": "Github",
+        "color": ""
+      },
+      {
+        "name": "HTML",
+        "color": "bg-orange-600"
+      },
+      {
+        "name": "Jest",
+        "color": ""
+      },
+      {
+        "name": "Jira",
+        "color": ""
+      },
+      {
+        "name": "Javascript",
+        "color": "bg-yellow-500"
+      },
+      {
+        "name": "MongoDB",
+        "color": "bg-green-600"
+      },
+      {
+        "name": "MySQL",
+        "color": "bg-cyan-700"
+      },
+      {
+        "name": "NextJS",
+        "color": "bg-cyan-700"
+      },
+      {
+        "name": "NodeJS",
+        "color": "bg-green-600"
+      },
+      {
+        "name": "Python",
+        "color": "bg-blue-500"
+      },
+      {
+        "name": "Pytorch",
+        "color": "bg-orange-600"
+      },
+      {
+        "name": "RDS",
+        "color": "bg-cyan-800"
+      },
+      {
+        "name": "Java",
+        "color": "bg-orange-600"
+      },
+      {
+        "name": "Tailwind",
+        "color": "bg-teal-600"
+      },
+      {
+        "name": "Vercel",
+        "color": "bg-neutral-600"
+      },
+      {
+        "name": "Springboot",
+        "color": "bg-green-600"
+      },
+      {
+        "name": "Selenium",
+        "color": "bg-green-600"
+      },
+      {
+        "name": "OpenAI-API",
+        "color": "bg-neutral-600"
+      }, 
+      {
+        "name": "MNE",
+        "color": "bg-neutral-600"
+      },
+      {
+        "name": "Matplotlib",
+        "color": "bg-neutral-600"
+      },
+      {
+        "name": "Flask",
+        "color": "bg-neutral-600"
+      },
+      {
+        "name": "React Native",
+        "color": "bg-blue-500"
+      },
+      {
+        "name": "Websocket",
+        "color": "bg-red-800"
+      },
+      {
+        "name": "PostgreSQL",
+        "color": "bg-blue-600"
+      },
+      {
+        "name": "BeautifulSoup",
+        "color": "bg-neutral-600"
+      },
+      {
+        "name": "Heroku",
+        "color": "bg-purple-600"
+      },
+      {
+        "name": "TypeScript",
+        "color": "bg-blue-900"
+      },
+      {
+        "name": "Square API",
+        "color": "bg-neutral-600"
+      }
+    ],
 
     "projects": [
+      {
+        "title": "Chinafastwok ordering site",
+        "alt": "Self Ordering Platfrom for local restaurant",
+        "description": "Grubhub takes 20%-30% from every sale a restaurant makes through their platform (I wanted to make a joke here but I will refrain in case a Grubhub recruiter is actually reading this). Therefore, I took it upon myself to build them a self ordering site for existing customers that offsets the 3rd party cost from 30% to only 2.9%. Profits!.",
+        "img_url": "/project_gifs/cfw.png",
+        "github_url": "",
+        "tool_names": ["NextJS", "React", "TypeScript", "HTML", "CSS", "Vercel", "Square API"]
+      },
       {
         "title": "Devin's Portfolio",
         "alt": "Personal Portfolio Site",
         "description": "The website you are currently on. It showcases my project, experience, as well as some of my hobbies. This personal site is built and deployed on Vercel using React and Vite.js frontend, styled with Tailwind CSS and the Framer-Motion library.",
-        "img_url": null,
-        "github_url": "https://www.github.com/liudev777"
+        "img_url": "/project_gifs/portfolio_site.gif",
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["React", "Tailwind", "Javascript", "HTML", "Vercel"]
       },
       {
         "title": "CareerProMatch",
         "alt": "Ai enhanced job board",
         "description": "Whats better than a regular job board like indeed that gives you sorta relevant jobs? An AI-powered job board that gives you definitely relevant jobs! CareerProMatch delivers tailored job recommendations using React, Java Spring Boot and MySQL and automates job postings with Selenium web scraping. It is (was) deployed on AWS EC2 and RDS. ",
         "img_url": null,
-        "github_url": "https://www.github.com/liudev777"
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["React", "Javascript", "CSS", "HTML", "Java", "Springboot", "MySQL", "AWS", "EC2", "RDS", "Selenium", "OpenAI-API"]
       },
       {
         "title": "Re:Eval Epilepsy",
         "alt": "Epilepsy diagnosis re-evaluation site",
         "description": "Don't you just hate it when your doctor accidentally misdiagnoses you with epilepsy and causes you to lose your drivers license? Re:Eval Epilepsy is a website that integrates a ML model to reduce epilepsy misdiagnosis, achieving 78% classification accuracy for abnormal EEG recordings.",
-        "img_url": null,
-        "github_url": "https://www.github.com/liudev777" 
+        "img_url": "/project_gifs/Re-Eval-Epilepsy.gif",
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["Python", "Pytorch", "Flask", "MNE", "Matplotlib"] 
       },
       {
         "title": "S2K Mapper",
         "alt": "Kiosk Square® payment mapping tool",
         "description": "Everyone hates tedious tasks, especially me (hence why I became a software engineer). Therefore I made an automation tool during my free time for my software QA internship to streamline the mapping of Square® payment devices to self-checkout kiosks using React Native, Node.js, and Websocket. Instead of manually entering serial numbers and pairing them in the companys slow web tool, I can now take a picture of the serial number and it'll do the job for me!",
         "img_url": null,
-        "github_url": "https://www.github.com/liudev777"
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["React Native", "NodeJS", "Websocket"]
       },
       {
         "title": "Discord Job Bot",
         "alt": "SWE job posting Discord bot",
         "description": "Discord Job Bot (very creative name) is a Discord bot that provides real-time SWE job listings based on user preferences such as seniority and location. It uses AWS RDS and BeautifulSoup for efficient data scraping. While we are at it, why not throw in daily LeetCode practices just for fun.",
-        "img_url": null,
-        "github_url": "https://www.github.com/liudev777"
+        "img_url": "/project_gifs/discord_job_bot.gif",
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["Python", "PostgreSQL", "AWS", "RDS", "BeautifulSoup"]
       },
       {
         "title": "AniBot",
         "alt": "Hackathon Discord anime scheduler bot",
         "description": "During covid, everyone was streaming anime in Discord with their friends. Wouldn't it be nice to have a Bot that reminds you when your favorite show airs? AniBot is (was) deployed on Heroku with OAuth integration for Anilist API to keep all those questionable animes you have been watching secure. It includes real-time notifications for airing shows. Preference data is stored in Supabase SQL database.",
-        "img_url": null,
-        "github_url": "https://www.github.com/liudev777"
+        "img_url": "/project_gifs/anibot.gif",
+        "github_url": "https://www.github.com/liudev777",
+        "tool_names": ["Python", "Heroku", "MongoDB"]
       }
     ],
 
@@ -53,6 +210,20 @@
     "instagram": "https://www.instagram.com/d.liuliuliu"
   },
   "experiences": [
+    {
+      "company": "City of Chicago (Contract)",
+      "title": "Full Stack Engineer",
+      "from": "09/2025",
+      "to": "Current",
+      "description": "Working with 11th Ward Alderman's office to build a civic platform for residents to get quick access to local resources and events and file complaints, using React and Supabase."
+    },
+    {
+      "company": "State Farm",
+      "title": "Software Engineer Intern",
+      "from": "05/2025",
+      "to": "08/2025",
+      "description": "Automated Quicksight Dashboard embed sharing for research analysts so that they can share dashboards with stakeholders without needing to manually build filters, using AWS Lambda, Quicksight API, and Python."
+    },
     {
       "company": "State Farm",
       "title": "Software Engineer Intern",
@@ -88,5 +259,263 @@
       "to": "08/2021",
       "description": "Fixed computers, resold business equipments, and made coffee all in one"
     }
+  ],
+  "tools": [
+    {
+      "name": "React",
+      "img_path": "/logo_svg/react.svg"
+    },
+    {
+      "name": "AWS",
+      "img_path": "/logo_svg/aws.svg"
+    },
+    {
+      "name": "C",
+      "img_path": "/logo_svg/c.svg"
+    },
+    {
+      "name": "Confluence",
+      "img_path": "/logo_svg/confluence.svg"
+    },
+    {
+      "name": "CSS",
+      "img_path": "/logo_svg/css.svg"
+    },
+    {
+      "name": "EC2",
+      "img_path": "/logo_svg/ec2.svg"
+    },
+    {
+      "name": "Git",
+      "img_path": "/logo_svg/git.svg"
+    },
+    {
+      "name": "Github",
+      "img_path": "/logo_svg/github.svg"
+    },
+    {
+      "name": "HTML",
+      "img_path": "/logo_svg/html.svg"
+    },
+    {
+      "name": "Jest",
+      "img_path": "/logo_svg/jest.svg"
+    },
+    {
+      "name": "Jira",
+      "img_path": "/logo_svg/jira.svg"
+    },
+    {
+      "name": "Javascript",
+      "img_path": "/logo_svg/js.svg"
+    },
+    {
+      "name": "MongoDB",
+      "img_path": "/logo_svg/mongodb.svg"
+    },
+    {
+      "name": "MySQL",
+      "img_path": "/logo_svg/mysql.svg"
+    },
+    {
+      "name": "NodeJS",
+      "img_path": "/logo_svg/nodejs.svg"
+    },
+    {
+      "name": "Python",
+      "img_path": "/logo_svg/python.svg"
+    },
+    {
+      "name": "Pytorch",
+      "img_path": "/logo_svg/pytorch.svg"
+    },
+    {
+      "name": "RDS",
+      "img_path": "/logo_svg/rds.svg"
+    },
+    {
+      "name": "Java",
+      "img_path": "/logo_svg/java.svg"
+    },
+    {
+      "name": "Tailwind",
+      "img_path": "/logo_svg/tailwind.svg"
+    },
+    {
+      "name": "Vercel",
+      "img_path": "/logo_svg/vercel.svg"
+    }
+  ],
+  "arts": [
+    {
+      "title": "Group Study",
+      "full_image_url": "/images/artwork/girl.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_girl.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "2B Fanart",
+      "full_image_url": "/images/artwork/2b.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_2b.jpg",
+      "crop": "0% 0%"
+    },
+    {
+      "title": "Forlorn Asuka",
+      "full_image_url": "/images/artwork/asuka.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_asuka.jpg",
+      "crop": "70%"
+    },
+    {
+      "title": "Bunny Composer 2B",
+      "full_image_url": "/images/artwork/bunny2b.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_bunny2b.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Shinobu Fanart",
+      "full_image_url": "/images/artwork/butterfly.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_butterfly.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "My Calc 3 Homework",
+      "full_image_url": "/images/artwork/calc.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_calc.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Whimsical Forest",
+      "full_image_url": "/images/artwork/elf.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_elf.jpg",
+      "crop": "20%"
+    },
+    {
+      "title": "邓紫棋",
+      "full_image_url": "/images/artwork/gem.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_gem.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "Style Study",
+      "full_image_url": "/images/artwork/glare.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_glare.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Yellow Sunglasses",
+      "full_image_url": "/images/artwork/glasses.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_glasses.jpg",
+      "crop": "50% 20%"
+    },
+    {
+      "title": "Kimono Girl",
+      "full_image_url": "/images/artwork/kimono.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_kimono.jpg",
+      "crop": "50% 10%"
+    },
+    {
+      "title": "Kimono Komi",
+      "full_image_url": "/images/artwork/komi.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_komi.jpg",
+      "crop": "20%"
+    },
+    {
+      "title": "Battle Maid",
+      "full_image_url": "/images/artwork/maid.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_maid.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "Beautifullest",
+      "full_image_url": "/images/artwork/most_beautiful_girl_on_earth.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_most_beautiful_girl_on_earth.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Top Down",
+      "full_image_url": "/images/artwork/orange.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_orange.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "Tadamon",
+      "full_image_url": "/images/artwork/pokikomi.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_pokikomi.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Princess",
+      "full_image_url": "/images/artwork/princess.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_princess.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Purple",
+      "full_image_url": "/images/artwork/purple.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_purple.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Qi",
+      "full_image_url": "/images/artwork/qi.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_qi.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Reol Fanart",
+      "full_image_url": "/images/artwork/reol.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_reol.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Shattered",
+      "full_image_url": "/images/artwork/shatter.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_shatter.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Terminator Line Study",
+      "full_image_url": "/images/artwork/soldier.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_soldier.jpg",
+      "crop": "50% 0%"
+    },
+    {
+      "title": "Realism Study",
+      "full_image_url": "/images/artwork/study.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_study.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Katana",
+      "full_image_url": "/images/artwork/sword.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_sword.jpg",
+      "crop": "50% 20%"
+    },
+    {
+      "title": "Tifa Fanart",
+      "full_image_url": "/images/artwork/tifa.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_tifa.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Slice of Life",
+      "full_image_url": "/images/artwork/time.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_time.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Umbrella",
+      "full_image_url": "/images/artwork/umbrella.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_umbrella.jpg",
+      "crop": ""
+    },
+    {
+      "title": "Yor Fanart",
+      "full_image_url": "/images/artwork/yor.jpg",
+      "thumbnail_image_url": "/images/thumbnails/jpeg-optimizer_yor.jpg",
+      "crop": ""
+    }
+
   ]
+  
 }
